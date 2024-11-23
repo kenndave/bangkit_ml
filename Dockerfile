@@ -16,11 +16,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install gdown
 
-
-RUN curl -o /capstone-project-442502-e205627d1062.json "https://drive.google.com/uc?export=download&id=17XFCjdg7g6hMB28QC_DeiresCxvhulso" \
-    && curl -o /firebase-credential.json "https://drive.google.com/uc?export=download&id=1eIKnsBTWTSoeZQVTwAJJpr7iWJaE4DuS"
-
+# Download files using gdown
+RUN gdown "https://drive.google.com/uc?id=17XFCjdg7g6hMB28QC_DeiresCxvhulso" -O /capstone-project-442502-e205627d1062.json \
+    && gdown "https://drive.google.com/uc?id=1eIKnsBTWTSoeZQVTwAJJpr7iWJaE4DuS" -O /firebase-credential.json
 
 COPY . .
 
