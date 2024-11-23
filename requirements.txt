@@ -2,10 +2,12 @@ fastapi
 uvicorn
 pillow
 numpy
-faiss-cpu
 paddlepaddle-gpu
 paddlepaddle
 paddleocr
+faiss-cpu
+pandas
+google-cloud-firestore
 python-multipart
 google-cloud-aiplatform
 opencv-python
