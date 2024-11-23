@@ -3,7 +3,7 @@ import json
 import pandas as pd
 import numpy as np
 from google.cloud import firestore
-from google.oauth2 import service_account
+# from google.oauth2 import service_account
 from app.common.logging import logger
 from app.models.embedding import embedding_model
 from app.common.config import settings
@@ -155,13 +155,13 @@ async def create_index(
         logger.info("Starting to create FAISS index...")
 
         # Initialize Firestore client
-        credentials = service_account.Credentials.from_service_account_file(
-            settings.firebase_credentials
-        )
+        # credentials = service_account.Credentials.from_service_account_file(
+        #     settings.firebase_credentials
+        # )
         firestore_client = firestore.Client(
             project=settings.project_id,
             database=settings.database,
-            credentials=credentials,
+            # credentials=credentials,
         )
 
         # Fetch product data from Firestore

@@ -3,7 +3,7 @@ from vertexai.generative_models import GenerativeModel
 from app.common.config import settings
 from app.common.logging import logger
 from google.auth.transport.requests import Request
-from google.oauth2.service_account import Credentials
+# from google.oauth2.service_account import Credentials
 
 
 class VertexAILLM:
@@ -18,18 +18,18 @@ class VertexAILLM:
         # Attributes
         self.model_name = model_name
 
-        credentials = Credentials.from_service_account_file(
-            settings.credentials,
-            scopes=["https://www.googleapis.com/auth/cloud-platform"],
-        )
+        # credentials = Credentials.from_service_account_file(
+        #     settings.credentials,
+        #     scopes=["https://www.googleapis.com/auth/cloud-platform"],
+        # )
 
-        if credentials.expired:
-            credentials.refresh(Request())
+        # if credentials.expired:
+        #     credentials.refresh(Request())
 
         vertexai.init(
             project=settings.project_id,
             location=settings.location,
-            credentials=credentials,
+            # credentials=credentials,
         )
 
     @property
