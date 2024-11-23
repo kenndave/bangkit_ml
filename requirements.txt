@@ -2,6 +2,7 @@ fastapi
 uvicorn
 pillow
 numpy
+faiss
 paddlepaddle-gpu
 paddlepaddle
 paddleocr
