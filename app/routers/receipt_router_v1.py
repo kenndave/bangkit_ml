@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException, UploadFile, File, Form
-from ..services.receipt_service_v1 import process_receipt_image
+from app.services.receipt_service_v1 import process_receipt_image
 
 router = APIRouter(prefix="/receipt")
 

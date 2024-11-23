@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException, Form
-from ..services.embedding_service_v1 import generate_embeddings
+from app.services.embedding_service_v1 import generate_embeddings
 
 
 router = APIRouter(prefix="/embeddings")

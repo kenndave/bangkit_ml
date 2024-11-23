@@ -1,7 +1,7 @@
 import vertexai
 from vertexai.generative_models import GenerativeModel
-from ..common.config import settings
-from ..common.logging import logger
+from app.common.config import settings
+from app.common.logging import logger
 from google.auth.transport.requests import Request
 from google.oauth2.service_account import Credentials
 

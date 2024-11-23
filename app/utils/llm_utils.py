@@ -1,6 +1,6 @@
 from typing import List, Dict
 import json
-from ..models.llm import VertexAILLM
+from app.models.llm import VertexAILLM
 
 gemini_llm = VertexAILLM()
 

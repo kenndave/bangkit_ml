@@ -3,10 +3,10 @@ from PIL import Image
 import io
 from datetime import datetime
 from fastapi import UploadFile
-from ..common.logging import logger
-from ..utils.image_utils import preprocess_image
-from ..utils.llm_utils import fix_typos_and_parse
-from ..utils.timestamp_utils import is_valid_timestamp
+from app.common.logging import logger
+from app.utils.image_utils import preprocess_image
+from app.utils.llm_utils import fix_typos_and_parse
+from app.utils.timestamp_utils import is_valid_timestamp
 
 
 ocr = PaddleOCR(use_angle_cls=True, lang="en")
