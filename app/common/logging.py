@@ -1,5 +1,5 @@
 import logging
-from config import settings
+from app.common.config import settings
 
 logger = logging.getLogger(settings.app_name)
 logger.setLevel(logging.INFO)
