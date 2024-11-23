@@ -1,0 +1,142 @@
+product_id,product_name,price
+1,Kappa Maki 4 pcs,10000
+2,Tamago Maki 4 pcs,10000
+3,Kani Maki Mentai,10000
+4,Tuna Gunkan 1 pcs,10000
+5,Kani Mayo Nigiri,10000
+6,Tamago Mayo Nigiri,10000
+7,Wakame Gunkan 1 pcs,10000
+8,Crunchy Roll,10000
+9,Tuna Teriyaki Nigiri,10000
+10,Chicken Gunkan 1 pcs,10000
+11,Ebi Hanamaki,21000
+12,Jigoku,19000
+13,Salmon Nigiri 1 pcs,15000
+14,Salmon Maki 4 pcs,15000
+15,Salmon Maki Mentai,15000
+16,California Roll,19000
+17,Inari Gunkan,15000
+18,Salmon Nigiri Creamcheese,15000
+19,Chuka Idako,37000
+20,Salmon Bomb,31000
+21,Beef Teriyaki Bomb,28000
+22,Salmon Spicy Bomb,29000
+23,Beef Spicy Bomb,28000
+24,Salmon Kani Bomb,29000
+25,Tuna Nigiri,25000
+26,Kani Nigiri,20000
+27,Tamago Nigiri,20000
+28,Chicken Gunkan 2 pcs,20000
+29,Salmon Nigiri 2 pcs,25000
+30,Wakame Gunkan 2 pcs,20000
+31,Salmon Gunkan,25000
+32,Tuna Gunkan 2 pcs,25000
+33,Sushicake Ni,100000
+34,Paket Berdua Mix,59000
+35,Sushicake San,76000
+36,Maki Lovers,59000
+37,Hemat Platter Yoi,47000
+38,Paket Salmon A,55000
+39,Paket Salmon B,59000
+40,Sushi Murmer Balista,38000
+41,Hemat Platter Senta,42000
+42,Sushi Mode Hemat,32000
+43,Sushi Mix Platter,32000
+44,Sushicake Ichi,150000
+45,Berdua Deluxe 1,85000
+46,Berdua Deluxe 2,90000
+47,Salmon Nigiri 6 pcs,70000
+48,Salmon Nigiri Special Mayo 6pcs,74000
+49,Salmon Set,113000
+50,Beef Set,37000
+51,Matange Platter,50000
+52,Salmon Sashimi 8 pcs,89000
+53,All In Sushicake,210000
+54,Premium Sushicake,239000
+55,Custom Sushicake 30cm,250000
+56,Custom Sushicake 20cm,160000
+57,Salmon Creamcheese 4 pcs,28000
+58,Salmon Creamcheese 8 pcs,45000
+59,Triple Salmon,41000
+60,Salmon Mentai 4 pcs,28000
+61,Salmon Mentai 8 pcs,44000
+62,Salmon Maki 8 pcs,25000
+63,Salmon Kani Maki Mentai,27000
+64,Tuna Maki,22000
+65,Kani Maki,17000
+66,Tamago Maki 8 pcs,17000
+67,Kappa Maki 8 pcs,17000
+68,Smoked Salmon Roll 4 pcs,28000
+69,Smoked Salmon Roll 8 pcs,45000
+70,Moza Roll 4 pcs,24000
+71,Moza Roll 8 pcs,34000
+72,California Roll 4 pcs,19000
+73,California Roll 8 pcs,31000
+74,Balista Avocado 4 pcs,22000
+75,Balista Avovado 8 pcs,34000
+76,Tuna Roll 4 pcs,22000
+77,Tuna Roll 8 pcs,36000
+78,Salmon Sakuru 4 pcs,28000
+79,Salmon Sakuru 8 pcs,43000
+80,Tuna Spicy Roll 4 pcs,22000
+81,Tuna Spicy Roll 8 pcs,38000
+82,Mix Fish Balista 4 pcs,27000
+83,Mix Fish Balista 8 pcs,41000
+84,Volcano Roll,33000
+85,Cruncy Crunch 4 pcs,19000
+86,Cruncy Crunch 8 pcs,32000
+87,Fujiyama 4 pcs,20000
+88,Fujiyama 8 pcs,32000
+89,Dragon Fish 4 pcs,27000
+90,Dragon Fish 8 pcs,39000
+91,Hidden Salmon Tuna 6 pcs,26000
+92,Hidden Salmon Tuna 12 pcs,38000
+93,Mr Big,29000
+94,Ebi Roll,29000
+95,Balista Chicken 6 pcs,19000
+96,Balista Chicken 12 pcs,31000
+97,Balista Beef 6 pcs,21000
+98,Balista Beef 12 pcs,33000
+99,Big Foot,39000
+100,Salmon Rawit Roll 4 pcs,19000
+101,Salmon Rawit Roll 8 pcs,29000
+102,Ebi Hanamaki 4 pcs,21000
+103,Ebi Hanamaki 8 pcs,33000
+104,Tuna Sesame Roll 4 pcs,22000
+105,Tuna Sesame Roll 8 pcs,38000
+106,Jigoku 4 pcs,19000
+107,Jigoku 8 pcs,29000
+108,Batsu 4 pcs,17000
+109,Batsu 8 pcs,26000
+110,Chicken Mayo 4 pcs,21000
+111,Chicken Mayo 8 pcs,34000
+112,Bonsai 4 pcs,21000
+113,Bonsai 8 pcs,34000
+114,Balista Mentai Roll 4 pcs,27000
+115,Balista Mentai Roll 8 pcs,45000
+116,Balista Salmon Roll 4 pcs,28000
+117,Balista Salmon Roll 8 pcs,53000
+118,Beef Signature,44000
+119,Tamaroe Roll,35000
+120,Tomyam Ramen,44000
+121,Soyu Ramen,36000
+122,Miso Ramen Chicken,34000
+123,Miso Ramen Ebi,34000
+124,Miso Ramen Cikuwa,34000
+125,Miso Ramen Beef,37000
+126,Mentai Rice Salmon,49000
+127,Mentai Rice Chicken,34000
+128,Okonomiyaki,25000
+129,Takoyaki,25000
+130,Chocolate Milk Tea,18000
+131,Taro Milk Tea,18000
+132,Matcha Milk Tea,18000
+133,Japanese Milk Tea,18000
+134,Original Milk Tea,15000
+135,Black Tea,12000
+136,Green Tea,12000
+137,Lemon Tea,9000
+138,Ice Tea,7000
+139,Sweet Ice Tea,10000
+140,Balista Pudding,20000
+141,Bobba Ice Cream,20000

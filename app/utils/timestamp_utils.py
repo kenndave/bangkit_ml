@@ -1,12 +1,13 @@
 from datetime import datetime
 
+
 def is_valid_timestamp(timestamp) -> bool:
     """
     Validates if the given timestamp is in ISO 8601 format.
-    
+
     Args:
         timestamp (str): The timestamp string to validate.
-    
+
     Returns:
         bool: True if the timestamp is valid, False otherwise.
     """

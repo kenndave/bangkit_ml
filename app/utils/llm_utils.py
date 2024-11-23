@@ -4,13 +4,20 @@ from app.models.llm import VertexAILLM
 
 gemini_llm = VertexAILLM()
 
-def fix_typos_and_parse(extracted_text: List[str]) -> Dict:
+
+def fix_typos_and_parse(extracted_text: List[str], products: list) -> Dict:
     """
     Fix typos in extracted text and parse it into structured data using Gemini.
     """
+    # Create product context
+    product_context = ",".join(products)
+
     # Create a refined prompt
     prompt = f"""
     You are an advanced AI assistant tasked with processing OCR text from a receipt. Your goal is to extract structured data with the following requirements:
+
+    Here is the list of products available in the store:
+    {product_context}
 
     Input:
     {extracted_text}
@@ -33,18 +40,13 @@ def fix_typos_and_parse(extracted_text: List[str]) -> Dict:
     3. Extract only the product name, quantity, and timestamp (if present) from the OCR text.
     4. If a timestamp exists, convert it to ISO 8601 format (YYYY-MM-DDTHH:MM:SS). If no timestamp is found, set "timestamp" to null.
     5. Leave "price_per_unit" and "total_price" as 0 for all items.
+    6. If quantity is a large number, change it to 0.
 
     Additional Notes:
     - Use double quotes (") for all property names and string values to ensure the response is valid JSON.
     - Ensure all numbers (e.g., quantity) are represented as integers, not strings.
     - Return only the JSON response, strictly adhering to the specified format.
     - Do not include any additional text or comments in the output.
-
-    Example Input:
-    [
-        "Product: Applle Qty: 2 Date: 2024-11-23T12:41:30",
-        "Product: Ornge Qty: 1"
-    ]
 
     Example Output:
     {{

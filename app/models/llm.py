@@ -5,7 +5,8 @@ from app.common.logging import logger
 from google.auth.transport.requests import Request
 from google.oauth2.service_account import Credentials
 
-class VertexAILLM():
+
+class VertexAILLM:
     """
     A wrapper for Google Cloud's Vertex AI model.
     """
@@ -19,12 +20,17 @@ class VertexAILLM():
 
         credentials = Credentials.from_service_account_file(
             settings.credentials,
-            scopes=['https://www.googleapis.com/auth/cloud-platform'])
+            scopes=["https://www.googleapis.com/auth/cloud-platform"],
+        )
 
         if credentials.expired:
             credentials.refresh(Request())
 
-        vertexai.init(project=settings.project_id, location=settings.location, credentials=credentials)
+        vertexai.init(
+            project=settings.project_id,
+            location=settings.location,
+            credentials=credentials,
+        )
 
     @property
     def _llm_type(self) -> str:
