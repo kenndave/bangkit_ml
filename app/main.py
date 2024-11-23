@@ -1,22 +1,16 @@
 from fastapi import FastAPI
-from app.routers import embedding_router_v1, receipt_router_v1
-# from app.common.config import settings
-# from app.common.logging import logger
+from routers import embedding_router_v1, receipt_router_v1
+from common.config import settings
 from routes.health import health_check
-import os
 
-APP_NAME = os.getenv("APP_NAME", "OCR + GenAI App")
-DEBUG = os.getenv("DEBUG", "false").lower() == "true"  # Convert string to boolean
-# DESCRIPTION = os.getenv(
-#     "APP_DESCRIPTION", "FastAPI app for processing receipt images and generating outputs."
-# )
+
 app = FastAPI(
-    title=APP_NAME,
+    title=settings.app_name,
     description="FastAPI app for processing receipt images and generating outputs.",
-    debug=DEBUG,
+    debug=settings.debug,
 )
 
-# logger.info(f"Starting {settings.app_name}")
+
 
 
 app.add_api_route("/", health_check, methods=["GET"])
