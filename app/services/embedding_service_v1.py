@@ -1,5 +1,5 @@
-from app.common.logging import logger
-from app.models.embedding import embedding_model
+from ..common.logging import logger
+from ..models.embedding import embedding_model
 
 async def generate_embeddings(product_name: str) -> dict:
     """
