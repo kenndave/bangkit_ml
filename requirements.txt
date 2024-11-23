@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+pillow
+numpy
+paddlepaddle-gpu
+paddlepaddle
+paddleocr
+python-multipart
+google-cloud-aiplatform
+opencv-python
+matplotlib
+pydantic==2.9.2
+pydantic-settings==2.6.1
+sentence-transformers>=2.2.2
+langchain>=0.0.300
+langchain_community>=0.1.0
